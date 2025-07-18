@@ -1,0 +1,91 @@
+agent:
+  model: "anthropic/claude-sonnet-4"
+  temperature: 0.6
+  top_p: 0.9
+  max_tokens: 8000
+  n: 1
+
+assistant:
+  model: "openai/gpt-4.1-mini"
+  temperature: 0.7
+  top_p: 0.9
+  max_tokens: 8000
+  n: 1
+
+simple:
+  model: "openai/gpt-4.1-mini"
+  temperature: 0.7
+  top_p: 0.95
+  max_tokens: 4000
+  n: 1
+
+simple_json:
+  model: "openai/gpt-4.1-mini"
+  temperature: 0.0
+  top_p: 1.0
+  max_tokens: 4000
+  n: 1
+  json: true
+
+adviser:
+  model: "openai/gpt-4.1-mini"
+  temperature: 0.5
+  top_p: 0.9
+  max_tokens: 6000
+  n: 1
+
+generator:
+  model: "anthropic/claude-sonnet-4"
+  temperature: 0.8
+  top_p: 0.95
+  max_tokens: 6000
+  n: 1
+
+refiner:
+  model: "openai/gpt-4.1-mini"
+  temperature: 0.4
+  top_p: 0.9
+  max_tokens: 8000
+  n: 1
+
+searcher:
+  model: "openai/gpt-4.1-mini"
+  temperature: 0.5
+  top_p: 0.9
+  max_tokens: 8000
+  n: 1
+
+enricher:
+  model: "openai/gpt-4.1-mini"
+  temperature: 0.6
+  top_p: 0.9
+  max_tokens: 8000
+  n: 1
+
+coder:
+  model: "anthropic/claude-sonnet-4"
+  temperature: 0.3
+  top_p: 0.9
+  max_tokens: 12000
+  n: 1
+
+installer:
+  model: "openai/gpt-4.1-mini"
+  temperature: 0.4
+  top_p: 0.9
+  max_tokens: 8000
+  n: 1
+
+pentester:
+  model: "anthropic/claude-sonnet-4"
+  temperature: 0.4
+  top_p: 0.9
+  max_tokens: 12000
+  n: 1
+
+reflector:
+  model: "openai/gpt-4.1-mini"
+  temperature: 0.5
+  top_p: 0.9
+  max_tokens: 8000
+  n: 1

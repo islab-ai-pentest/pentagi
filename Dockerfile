@@ -114,6 +114,8 @@ COPY EULA.md /opt/pentagi/fe/EULA.md
 
 RUN chown -R pentagi:pentagi /opt/pentagi
 
+RUN apk update && apk add curl
+
 WORKDIR /opt/pentagi
 
 USER pentagi

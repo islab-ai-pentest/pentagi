@@ -22,7 +22,8 @@ networks:
 services:
 
   pentagi:
-    image: vxcontrol/pentagi:latest
+    # image: vxcontrol/pentagi:latest
+    build: .
     restart: unless-stopped
     container_name: pentagi
     hostname: pentagi
@@ -114,6 +115,8 @@ services:
       - pentagi-data:/opt/pentagi/data
       - pentagi-ssl:/opt/pentagi/ssl
       - /var/run/docker.sock:/var/run/docker.sock
+      - ./conf/openrouter.provider.yml:/opt/pentagi/conf/openrouter.provider.yml
+      - ./.env:/opt/pentagi/.env
     user: root:root # while using docker.sock
     networks:
       - pentagi-network
